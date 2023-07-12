@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class BurçBulucu {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int gün, ay;
+
+        System.out.println("Doğum Gününüzü Girin (gg/aa): ");
+        gün = sc.nextInt();
+        ay = sc.nextInt();
+
+        String burç = "";
+        if (ay == 3 && gün >= 21 || ay == 4 && gün <= 20) {
+            burç = "Koç";
+        } else if (ay == 4 && gün >= 21 || ay == 5 && gün <= 21) {
+            burç = "Boğa";
+        } else if (ay == 5 && gün >= 22 || ay == 6 && gün <= 22) {
+            burç = "İkizler";
+        } else if (ay == 6 && gün >= 23 || ay == 7 && gün <= 22) {
+            burç = "Yengeç";
+        } else if (ay == 7 && gün >= 23 || ay == 8 && gün <= 22) {
+            burç = "Aslan";
+        } else if (ay == 8 && gün >= 23 || ay == 9 && gün <= 22) {
+            burç = "Başak";
+        } else if (ay == 9 && gün >= 23 || ay == 10 && gün <= 22) {
+            burç = "Terazi";
+        } else if (ay == 10 && gün >= 23 || ay == 11 && gün <= 21) {
+            burç = "Akrep";
+        } else if (ay == 11 && gün >= 22 || ay == 12 && gün <= 21) {
+            burç = "Yay";
+        } else if (ay == 12 && gün >= 22 || ay == 1 && gün <= 21) {
+            burç = "Oğlak";
+        } else if (ay == 1 && gün >= 22 || ay == 2 && gün <= 19) {
+            burç = "Kova";
+        } else if (ay == 2 && gün >= 20 || ay == 3 && gün <= 20) {
+            burç = "Balık";
+        }
+
+        System.out.println("Burcunuz: " + burç);
+    }
+}
